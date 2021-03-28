@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: red;
+    font-family: "Roboto", sans-serif;
+}
+  
+  .logo {
+    margin: 0;
+    color: #9ab;
+    padding: 25px;
+  
+  }
+  
+  .main-header {
+    background: #14191d;
+  }
+  
+  .header1 {
+    display:flex;
+  }
+  
+  
+  .h-img1 {
+    height: 50px;
+    width: 50px;
+    margin-left: 560px;
+    border-radius: 50%;
+  }
+  
+  .h-img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  
+  
+  .select {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .select-btn {
+  
+    margin: 10px;
+    padding: 10px 50px;
+    
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .kubrik {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-image {
+    height: 1080px;
+    background-image: url("img/main-img.png");
+  }
+  
+
+  .movies-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    font-weight: bold;
+    font-size: 70px;
+    margin: 55px;
+  }
+  
+  
+  .movies-container {
+    display: flex;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .movie-card {
+  
+    position: relative;
+  
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 85px;
+    
+  }
+  
+  .movie-name {
+    display: block;
+    width: 250px;
+    height: 40px;
+  
+    padding: 5px;
+    margin: 1px;
+    border-radius: 5px;
+  }
+  
+  a {
+    color: lightblue;
+    font-weight: bold;
+  }
+  
+  img {
+    height: 300px;
+    width: auto;
+  }
+  
+  .btn-color {
+    color: pink;
+  }
+  
+  footer {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+  }
+  
+  @media screen and (max-width: 1060px) {
+  .movies-container {
+      flex-wrap: wrap;
+    }
+  
+  }
+  
+  @media screen and (max-width: 740px) {
+    .anime {
+      font-size: 36px;
+    }
+    .movies-container {
+    display: flex;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+   
+   }
+  
+  
+  @media screen and (max-width: 540px) {
+    .kubrik {
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    }
+    .movies-container {
+      flex-direction: column;
+      width: 60%;
+    }
+   }
